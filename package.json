@@ -1,16 +1,16 @@
 {
-  "name": "ics",
+  "name": "ics-browser-es",
   "version": "2.10.0",
-  "description": "iCal (ics) file generator",
-  "main": "index.js",
+  "description": "A fork of: iCal (ics) file generator by Adam Gibbons",
+  "main": "src/index.js",
   "scripts": {
     "start": "mocha --compilers js:babel-core/register --watch --recursive",
     "test": "mocha --compilers js:babel-core/register --recursive",
-    "build": "rm -r dist; gulp build"
+    "build": "rm -r dist && gulp build"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/adamgibbons/ics.git"
+    "url": "https://github.com/daleyjem/ics"
   },
   "keywords": [
     "ical",
@@ -42,12 +42,12 @@
     "mocha": "^3.5.0"
   },
   "dependencies": {
-    "joi": "^14.0.1",
+    "joi-browser": "^10.6.0",
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
     "uuid": "^3.1.0"
   },
   "files": [
-    "dist/"
+    "src/"
   ]
 }
